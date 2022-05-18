@@ -1,6 +1,6 @@
 package ru.netology.sqr;
 
-import org.testng.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 public class SQRServiceTest {
@@ -19,7 +19,7 @@ public class SQRServiceTest {
         SQRService service = new SQRService();
         int actual = service.squareRoot(min, max);
 
-        Assert.assertEquals (expected, actual);
+        Assertions.assertEquals (expected, actual);
     }
 }
 
